@@ -1,6 +1,12 @@
+using StoreAPI.Data;
+using StoreAPI.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<DataConfig>();
+builder.Services.AddSingleton<ProductContext>();
+builder.Services.AddSingleton<ProductService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
