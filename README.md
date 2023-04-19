@@ -1,7 +1,1 @@
 # OnlineStore
-
-## Details
-
-## Models
-
-Product
