@@ -11,7 +11,7 @@ using StoreAPI.Services;
 
 namespace StoreAPI.Controllers;
 
-[Route("api/[controller]")]
+[Route("api/product")]
 [ApiController]
 public class ProductController : ControllerBase
 {
@@ -22,15 +22,22 @@ public class ProductController : ControllerBase
         _service = service;
     }
 
-    // GET: api/Product
     [HttpGet]
     public IEnumerable<Product> GetProducts()
     {
         return _service.GetProducts();
     }
 
+    [HttpGet("{id}")]
+    [Route("api/product")]
+    public Product GetProduct(int id)
+    {
+        Product output = _service.GetProducts().ToList().Where(x => x.Id == id).First();
+        return output;
+    }
+
     [HttpGet]
-    [Route("/manufacturers")]
+    [Route("api/manufacturers")]
     public IEnumerable<Manufacturer> GetManufacturers()
     {
         return _service.GetManufacturers();
