@@ -6,21 +6,27 @@ namespace StoreAPI.Services;
 
 public class ProductService
 {
-    private ProductContext context;
+    private ProductContext _context;
 
     public ProductService(ProductContext _context)
     {
-        context = _context;
+        this._context = _context;
     }
 
     public IEnumerable<Product> GetProducts()
     {
-        var output = context.Products;
+        var output = _context.Products;
         return output;
     }
 
     public IEnumerable<Manufacturer> GetManufacturers()
     {
-        return context.Manufacturers;
+        return _context.Manufacturers;
+    }
+
+    public async Task AddProduct(Product product)
+    {
+        _context.Products.Add(product);
+        await _context.SaveChangesAsync();
     }
 }

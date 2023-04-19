@@ -25,7 +25,7 @@ public class Product
     /// <summary>
     /// Manufacturer instance
     /// </summary>
-    public Manufacturer Manufacturer { get; set; }
+    public Manufacturer? Manufacturer { get; set; }
 
     /// <summary>
     /// True if stock count is greater than 1

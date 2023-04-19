@@ -29,7 +29,6 @@ public class ProductController : ControllerBase
     }
 
     [HttpGet("{id}")]
-    [Route("api/product")]
     public Product GetProduct(int id)
     {
         Product output = _service.GetProducts().ToList().Where(x => x.Id == id).First();
@@ -41,5 +40,13 @@ public class ProductController : ControllerBase
     public IEnumerable<Manufacturer> GetManufacturers()
     {
         return _service.GetManufacturers();
+    }
+
+    // api/product
+    [HttpPost]
+    public async Task<ActionResult<Product>> CreateProduct(Product product)
+    {
+        await _service.AddProduct(product);
+        return CreatedAtAction("GetProduct", new { id = product.Id }, product);
     }
 }
