@@ -1,7 +1,12 @@
 # Golf Course Web System
 
 ## To Do
+* Setup Database for Pro Shop products
 
-* Add Http Put endpoint for Products
-* Add Http Delete endpoint for Products
-* Implement CRUD operations in Product SQLite context
+## Features
+* Tee Time Registration
+* Pricing information
+* Amenities
+* Restaurant Menu
+* Online Pro Shop
+* Account creation
