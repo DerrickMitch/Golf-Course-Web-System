@@ -11389,11 +11389,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\WebAPI.csproj",
+      "projectUniqueName": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj",
       "projectName": "WebAPI",
-      "projectPath": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\WebAPI.csproj",
+      "projectPath": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\derri\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\obj\\",
+      "outputPath": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

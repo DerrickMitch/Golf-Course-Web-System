@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2dUamkB8o6GVkacD/ewQNWXa9BPh6HCvq8SsP0EARe6GeKq7KW8oVGZfnElC3S2wgptWxXBrVKOzK1c4q2D5rg==",
+  "dgSpecHash": "L+PyRCgCMkBQ7v9cZRQM5Q4WzlJNSzPw92znI5LrBJos93GGHGTKvdCZALx8RGWIZc9lgIxNSEfcnM76qTvPeQ==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\WebAPI.csproj",
+  "projectFilePath": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\derri\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\derri\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
