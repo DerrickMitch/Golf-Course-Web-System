@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
-using StoreAPI.Models;
+using WebAPI.Models;
 
-namespace StoreAPI.Data;
+namespace WebAPI.Data;
 
 public class ProductContext : DbContext
 {
@@ -10,7 +10,7 @@ public class ProductContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlite("DataSource=OnlineStore.db");
+        optionsBuilder.UseSqlite("DataSource=GolfCourse.db");
     }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -20,18 +20,11 @@ public class ProductContext : DbContext
         {
             // Relationships
             entity
-                .HasOne(e => e.Manufacturer)
-                .WithMany(p => p.Products);
+                .HasOne(e => e.Manufacturer);
 
-            // Price converstions
+            // Price converstion
             entity
-                .Property(e => e.SalePrice)
-                .HasConversion(
-                    x => x * 100,
-                    x => x / 100
-                );
-            entity
-                .Property(e => e.PurchasePrice)
+                .Property(e => e.Price)
                 .HasConversion(
                     x => x * 100,
                     x => x / 100

@@ -1,13 +1,15 @@
-using StoreAPI.Data;
-using StoreAPI.Services;
+using WebAPI.Data;
+using WebAPI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddTransient<ProductService>();
+builder.Services.AddTransient<ReservationService>();
 
 builder.Services.AddControllers();
 builder.Services.AddDbContext<ProductContext>();
+builder.Services.AddDbContext<ReservationContext>();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

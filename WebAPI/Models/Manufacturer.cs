@@ -1,4 +1,4 @@
-namespace StoreAPI.Models;
+namespace WebAPI.Models;
 
 public class Manufacturer
 {
@@ -11,14 +11,4 @@ public class Manufacturer
     /// Name of Manufacturer
     /// </summary>
     public string Name { get; set; }
-
-    /// <summary>
-    /// List of all products associated with Manufacturer
-    /// </summary>
-    public List<Product> Products { get; set; }
-
-    /// <summary>
-    /// Address of Manufacturer headquarters
-    /// </summary>
-    public string Location { get; set; }
 }

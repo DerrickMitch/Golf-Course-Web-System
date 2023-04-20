@@ -1,12 +1,12 @@
 using Microsoft.EntityFrameworkCore;
-using StoreAPI.Data;
-using StoreAPI.Models;
+using WebAPI.Data;
+using WebAPI.Models;
 
-namespace StoreAPI.Services;
+namespace WebAPI.Services;
 
 public class ProductService
 {
-    private ProductContext _context;
+    private readonly ProductContext _context;
 
     public ProductService(ProductContext _context)
     {

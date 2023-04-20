@@ -5,11 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using StoreAPI.Data;
-using StoreAPI.Models;
-using StoreAPI.Services;
+using WebAPI.Data;
+using WebAPI.Models;
+using WebAPI.Services;
 
-namespace StoreAPI.Controllers;
+namespace WebAPI.Controllers;
 
 [Route("api/product")]
 [ApiController]

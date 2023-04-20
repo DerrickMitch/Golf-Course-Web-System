@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\StoreAPI.csproj": {}
+    "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\StoreAPI.csproj": {
+    "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\StoreAPI.csproj",
-        "projectName": "StoreAPI",
-        "projectPath": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\StoreAPI.csproj",
+        "projectUniqueName": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj",
+        "projectName": "WebAPI",
+        "projectPath": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\WebAPI.csproj",
         "packagesPath": "C:\\Users\\derri\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Golf-Course-Web-System\\StoreAPI\\obj\\",
+        "outputPath": "C:\\Projects\\Golf-Course-Web-System\\WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
